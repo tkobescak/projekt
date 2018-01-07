@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Za iduće predavanja i vježbe napravite dokument sa svim HTML 5 elementima koji će sadržavati naslov, podnaslov, 3 odlomka, sliku i video, te vanjsku vezu prema VVG stranici. -->
+
+<!-- 
+ZADATAK 1.  
+Staviti glavni naslov na stranicu. 
+Napisati 3 paragrafa (minimalno 10 riječi u svakom) naslovima. 
+Odvojiti ih u div cjeline. 
+Svaki naslov mora biti link na http://www.google.com/. 
+Divovi moraju biti odvojeni jednom horizontalnom linijom i jednim novim redom. 
+Koristiti HTML5 deklaraciju. 
+ZADATAK 2.  
+Napisati div koji će biti pozicioniran na sredini stranice horizontalno (pomoću margina), 
+a od vrha da bude pomaknut 130px. 
+Širina diva mora biti 300px, a boja pozadine #6E8A76. 
+Padding unutar diva mora sa svih strana biti 10px.
+Text unutra mora biti centriran. 
+Radius ruba mora biti 5px. -->
+
+		<head>
+		<title>Programiranje web aplikacija</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Tomislav Kobescak">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<!-- uvoz fonta iz fonts.google.com -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- vanjski css -->
+		<link rel="stylesheet" type="text/css" href="css/style.css"> 
+<!-- unutarnji stil css -->
+<!--	<style> 
+	a:hover {
+			color:yellow;
+		} 
+	</style> -->
+	</head>
+<body>
+<div>
+<!-- globalna kutija -->
+    <div id="box">
+<!-- Header -->
+
+        <div class="header">
+        <header>
+            <h1>VVG</h1>
+            <h2>Veleučilište Velika Gorica</h2>
+        </div><br><hr><br>
+<!-- Menu -->
+        <div class="nav">
+		<nav>
+			<ul>
+				<li><a href="https://www.vvg.hr/" target="_blank">Naslovnica</a></li>
+				<li><a href="https://www.vvg.hr/o-studijima/zasto-izabrati-vvg" target="_blank">Zašto izabrati VVG</a></li>
+				<li><a href="https://www.vvg.hr/o-studijima/studiranje/izvanredni-studij" target="_blank">Izvanredni studij</a></li>
+				<li><a href="https://www.vvg.hr/medjunarodna-suradnja" target="_blank">Međunarodna suradnja</a></li>
+				<li><a href="#" class="button special" target="_blank">Sign Up</a></li>
+			</ul>
+		</nav>
+		</div><br><hr><br>
+	</header>
+<!-- kutija za clanke -->
+	<div id="box_clanak">
+<!-- 1. odlomak -->
+    <div id="prvi_clanak">
+    <article>
+        <h3><p><em>1. odlomak</em></p></h3>
+        <h4><a href="https://www.vvg.hr/o-nama/o-veleucilistu/" target="_blank"><p>1. link na Google</p></a></h4>
+        <h4><a href="https://www.vvg.hr/o-nama/o-veleucilistu/" target="_blank"><p>O Veleučilištu</p></a></h4>
+    </article>
+<!-- lokalni video -->
+        <video width="240" height="180" controls>
+        <source src="videos/video_01.mp4" type="video/mp4">
+        </video>
+        <h4><p>Veleučilište Velika Gorica je visokoobrazovna ustanova koja provodi pet stručnih i tri diplomska specijalistička stručna studija čiji se nastavni programi realiziraju uz pomoć suvremenih tehnologija koje se konstantno nadopunjavaju, obnavljaju te omogućavaju svojim polaznicima lakši prijenos znanja koje će im, izlaskom na tržište rada, osigurati zapošljavanje i napredovanje u poslu, odnosno egzistenciju u nekoj od današnjih suvremenih organizacija.</h4>
+        <h5>Trenutno je na Veleučilištu Velika Gorica upisano oko 1500 redovnih i izvanrednih studenata.</h5></p>
+    </div>
+<!-- 2. odlomak -->
+    <div id="drugi_clanak">
+    <article>
+        <h3><p>2. odlomak</p></h3>
+        <h4><a href="https://www.vvg.hr/o-nama/o-veleucilistu/" target="_blank"><p>2. link na Google</p></a></h4>
+        <h4><a href="https://www.vvg.hr/o-nama/misija-i-vizija/" target="_blank"><b><i><p>Misija i vizija</b></i></p></a></h4>
+<!-- lokalna slika -->
+        <p><img src="images/logo_01.jpeg" width="100px" alt="alt text" style="float: left"0></p>
+        <h4><p>Današnji brzi napredak tehnologija korištenih u područjima tehničkih struka, ne zadovoljava više tromi sustav školovanja već fleksibilan sustav prilagodljiv potrebama i potražnji na tržištu. Kako bi se upravo ovakav sustav obrazovanja mogao primijeniti na Veleučilištu Velika Gorica, uvedene su upisne kvote s maksimalnim brojem od 30 studenata po grupi što je u skladu s Bolonjskim procesom, a koji omogućuje studentima interaktivan rad s predavačima odnosno daje garanciju na kvalitetu nastave te postavlja studenta u centar obrazovnog procesa.</h4>
+        <h5>Vizija Veleučilišta Velika Gorica je biti renomirana i tehnološki suvremena obrazovna ustanova s jedinstvenim studijskim programima na području jugoistočne Europe. Razviti vlastiti nastavni kadar koji će pružati studentima visokostručno specifično obrazovanje te cjeloživotno usavršavanje. Integrirati sa gospodarstvom kao sastavnim dijelom obrazovanja i biti fleksibilna obrazovna ustanova spremna na konstantno prilagođavanje potrebama u gospodarstvu i pomagati njegovom razvoju.</h5></p>
+    </article>
+    </div>
+<!-- 3. odlomak -->
+    <div id="treci_clanak">
+    <article>
+        <h3><p>3. odlomak</p></h3>
+        <h4><a href="https://www.vvg.hr/o-nama/o-veleucilistu/" target="_blank"><p>3. link na Google</p></a></h4>
+        <h4><a href="https://www.vvg.hr/o-nama/rijec-dekana/" target="_blank"><p>Riječ dekana</p></a></h4>
+<!-- video link https://www.youtube.com/watch?time_continue=1&v=IRvjH5fW-5c -->
+       <iframe width="240" height="135" src="https://www.youtube.com/embed/IRvjH5fW-5c" frameborder="0" allowfullscreen></iframe></br>
+        <p><img src="https://www.vvg.hr/wp-content/uploads/2015/07/Toth-Ivan-200x300.jpg" width="100px" alt="alt text" style="float: left"></p>
+        <h4><p>Poštovane kolegice i kolege, dragi studenti, na samom početku želim vam dobrodošlicu na Veleučilište Velika Gorica. Sretni smo što ste odabrali jedan od naših stručnih ili specijalističkih diplomskih studija. Smatramo da je odabir studija jedna od najvažnijih odluka u vašem životu s kojom ste se do sada susreli. Stoga nam je izuzetna čast, ali i velika obveza što ste upravo nama povjerili vaše obrazovanje u slijedećim godinama. Vjerujemo da ste ispravno postupili i sigurni smo da ćemo opravdati vaše povjerenje.</h4>
+        <h5>Na kraju, želimo vam reći da ćemo poduzeti sve što je u okviru naše nadležnosti kako biste po završetku studija postali renomirani stručnjak kojim će se naše Veleučilište ponositi. U tom procesu vi ste najvažniji. Stoga, bez vaše želje, truda i sudjelovanja taj cilj neće biti ostvariv.</h5></p></br>
+    </article>
+    </div>
+<!-- krak lutije za clanke -->
+    </div><br><hr><br>
+<!-- button submit -->
+    <div id="button">
+    <form action="http://www.test.hr/test.htm" method="get" name="test">
+    <input type="" name="" size="">
+    <input type="submit" value="Submit" name="btnSubmit">
+    </div><br><hr><br>
+    </form>
+<!-- Banner -->
+    <div id="banner">
+	<section>
+		<a <img src="https://static.pexels.com/photos/34950/pexels-photo.jpg" alt="Podloga">
+		<div class="inner">
+			<h2>Ovo je VVG banner</h2>
+			<p>Banner Veleučilišta Velika Gorica</p>
+			<ul class="actions">
+				<li><a href="#content" class="button big special">Sign Up</a></li>
+				<li><a href="#elements" class="button big alt">Learn More</a></li>
+			</ul>
+	</section>
+	</div><br><hr><br>
+<!-- meter element -->
+    <div id="meter">
+    <p><meter value="2" min="0" max="10">2 out of 10</meter></p>
+    <p><meter value="0.6">60%</meter></p>
+    <p>Vaš rezultat je: <meter value="91" min="0" max="100" low="40" high="90" optimum="100">5</meter></p>
+    <p>Vaš rezultat je: <meter value="50" min="0" max="100" low="40" high="90" optimum="100">5</meter></p>
+    <p>Vaš rezultat je: <meter value="20" min="0" max="100" low="40" high="90" optimum="100">5</meter></p>
+    </div><br><hr><br>
+<!-- Content -->
+    <div id="content">
+    <content>
+	<figure>
+		<a href="http://www.vvg.hr" target="_blank"><img src="http://www.vvg.hr/wp-content/uploads/2016/05/logo2.jpg" width="230px" alt="Veleučilište Velika Gorica"></a>
+		<h5><figcaption>Veleučilište Velika Gorica, VVG</figcaption></h5>
+		<h5><figcaption> ... neki tekst ispod slike ...<figcaption></h5>
+	</figure>
+	</div><br><hr><br>
+    </content>
+<!-- Footer -->
+    <div id="footer">
+    <footer>
+        <p>Copyright © 2017 VVG</p>
+        <nav>
+            <a href="https://www.vvg.hr/o-nama" target="_blank">O nama</a> -
+            <a href="https://www.vvg.hr/kontakti" target="_blank">Kontakt</a>
+        </nav>
+    </div><br><hr><br>
+    </footer>
+<!-- kraj globalne kutije -->
+</div>
+</body>
+</html>
