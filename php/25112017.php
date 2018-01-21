@@ -33,4 +33,5 @@ $tekst1 = "a = " .$a;
 $tekst2 = "b = " .$b;
 $tekst3 = "c = (3a - b)/2 = " .$c;
 echo $tekst1. "<br />" . $tekst2. "<hr >" .$tekst3; 
-?> 
+?>
+

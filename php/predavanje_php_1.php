@@ -1,6 +1,7 @@
 <html>
 <body>
 <?php
+
 $arr_boje=array('plavo','žuto','zeleno');
 echo $arr_boje[0] ."<br>"; // ispisat će 'plavo'
 echo $arr_boje[1] ."<br>"; // ispisat će 'žuto'

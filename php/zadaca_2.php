@@ -50,4 +50,4 @@ elseif (($a>= 2 && $a<= 5) && ($b>= 2 && $b<= 5)) { echo "<p>Srednja ocjena je: 
 else echo $e." <p>Neispravno upisan broj!</p> ";
 ?>
 </body>
-</html> 
+</html>
